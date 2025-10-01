@@ -1,1 +1,1 @@
-console.log('this is the first javascript file of my first repo')
+console.log('Hello')
