@@ -4,10 +4,33 @@ using namespace std;
 int main(){
 
     int a, b;
-    cout << "enter 2 numbers : " << endl;
-    cin >> a >> b;
-    int sum = a + b;
+    char op;
 
-    cout << sum;
+    cout << "Enter two integers: ";
+    cin >> a >> b;
+    cout << "Enter an operator (+, -, *, /, %): ";
+    cin >> op;
+    switch (op)
+    {
+    case '+':
+    cout << "Sum: " << a + b << endl;
+    break;
+    case '-':
+    cout << "Difference: " << a - b << endl;   
+    break;
+    case '*':
+    cout << "Product: " << a * b << endl;
+    break;
+    case '/':
+    cout << "Quotient: " << a / b << endl;
+    break;
+
+    case '%':
+    cout << "Remainder: " << a % b << endl;
+    break;
+    default:
+    cout << "Invalid Operator" << endl;
+        break;
+    }
 
 }
