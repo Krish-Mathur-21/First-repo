@@ -22,15 +22,14 @@ int main(){
     cout << "Product: " << a * b << endl;
     break;
     case '/':
-    cout << "Quotient: " << a / b << endl;
+    cout << "Quotient: " << (double)a / b << endl;
     break;
-
     case '%':
     cout << "Remainder: " << a % b << endl;
     break;
     default:
     cout << "Invalid Operator" << endl;
-        break;
+    break;
     }
 
 }
