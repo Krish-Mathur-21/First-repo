@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
 
-    int a, b;
+    double a, b;
     char op;
 
     cout << "Enter two integers: ";
@@ -22,10 +22,10 @@ int main(){
     cout << "Product: " << a * b << endl;
     break;
     case '/':
-    cout << "Quotient: " << (double)a / b << endl;
+    cout << "Quotient: " << a / b << endl;
     break;
     case '%':
-    cout << "Remainder: " << a % b << endl;
+    cout << "Remainder: " << (int)a % (int) b << endl;
     break;
     default:
     cout << "Invalid Operator" << endl;
